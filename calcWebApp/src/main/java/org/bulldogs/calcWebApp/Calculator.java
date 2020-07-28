@@ -6,14 +6,13 @@ public class Calculator
 	{
 		return a-b;
 	}
-	
+		
 	public int add(int a, int b)
 	{
 		
 		return a+b;
 	}
-	
-	
+		
 	public int mul(int a, int b)
 	{
 		return a*b;
@@ -26,15 +25,21 @@ public class Calculator
 	
 	public boolean isEven(int a)
 	{
-		if (a % 2 == 0)
-			return true;
+		if (a % 2 != 0)
+			return false;
 		
 		else 
-			return false;
+			return true;
 	}
 	
 	public int factorial(int a)
-	{		
+	{	
+		if (a < 0)
+			return -1;
+		
+		if (a == 0)
+			return 1; 
+		
 		if (a == 1)
 			return 1;
 		

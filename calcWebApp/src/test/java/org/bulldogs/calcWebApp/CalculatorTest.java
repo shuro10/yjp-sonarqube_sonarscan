@@ -94,6 +94,26 @@ public class CalculatorTest {
 		int result = c.factorial(5);
 		assertEquals(120, result);
 	}
+
+
+	@Test
+	public void factorialMethodTest4() 
+	{
+		Calculator c = new Calculator();
+		int result = c.factorial(0);
+		assertEquals(1, result);
+	}
+	
+	
+	@Test
+	public void factorialMethodTest5() 
+	{
+		Calculator c = new Calculator();
+		int result = c.factorial(-5);
+		assertEquals(-1, result);
+	}
+
+	
 	
 	@Test
 	public void isEvenTest1()
@@ -103,7 +123,6 @@ public class CalculatorTest {
 		assertEquals(b, false);
 		
 	}
-
 
 	@Test
 	public void isEvenTest2()
@@ -118,7 +137,7 @@ public class CalculatorTest {
 	public void isEvenTest3()
 	{
 		Calculator c = new Calculator();
-		boolean b = c.isEven(-5);
+		boolean b = c.isEven(-155);
 		assertEquals(b, false);
 		
 	}
