@@ -20,6 +20,9 @@ public class Calculator
 	
 	public int div(int a, int b)
 	{
+		if (b==0)
+			return -1;
+		
 		return a/b;
 	}
 	
@@ -31,14 +34,16 @@ public class Calculator
 		else 
 			return true;
 	}
+
+	
 	
 	public int factorial(int a)
 	{	
-		if (a < 0)
+		if ( a<0 )
 			return -1;
 		
 		if (a == 0)
-			return 1; 
+			return 1;
 		
 		if (a == 1)
 			return 1;
@@ -46,4 +51,6 @@ public class Calculator
 		else 
 		return a * factorial (a-1);
 	}
+	
+	
 }

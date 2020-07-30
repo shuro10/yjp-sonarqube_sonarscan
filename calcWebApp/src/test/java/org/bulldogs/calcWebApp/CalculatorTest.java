@@ -70,6 +70,33 @@ public class CalculatorTest {
 		assertEquals(0, result);
 	}	
 	
+	@Test
+	public void divMethodTest1() 
+	{
+		Calculator c = new Calculator();
+		int result = c.div(5, 5);
+		assertEquals(1, result);
+	}	
+
+	@Test
+	public void divMethodTest2() 
+	{
+		Calculator c = new Calculator();
+		int result = c.div(15, 5);
+		assertEquals(3, result);
+	}	
+
+	@Test
+	public void divMethodTest3() 
+	{
+		Calculator c = new Calculator();
+		int result = c.div(15, 0);
+		assertEquals(-1, result);
+	}	
+	
+	
+	
+	
 	
 	@Test
 	public void factorialMethodTest1() 
@@ -78,7 +105,7 @@ public class CalculatorTest {
 		int result = c.factorial(3);
 		assertEquals(6, result);
 	}
-
+	
 	@Test
 	public void factorialMethodTest2() 
 	{
@@ -95,7 +122,6 @@ public class CalculatorTest {
 		assertEquals(120, result);
 	}
 
-
 	@Test
 	public void factorialMethodTest4() 
 	{
@@ -103,7 +129,6 @@ public class CalculatorTest {
 		int result = c.factorial(0);
 		assertEquals(1, result);
 	}
-	
 	
 	@Test
 	public void factorialMethodTest5() 
@@ -130,16 +155,14 @@ public class CalculatorTest {
 		Calculator c = new Calculator();
 		boolean b = c.isEven(4);
 		assertEquals(b, true);
-		
 	}
 
 	@Test
 	public void isEvenTest3()
 	{
 		Calculator c = new Calculator();
-		boolean b = c.isEven(-155);
+		boolean b = c.isEven(-15);
 		assertEquals(b, false);
-		
 	}
 
 }
