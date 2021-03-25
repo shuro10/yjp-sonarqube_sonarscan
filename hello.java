@@ -18,6 +18,6 @@ public class ArrayDemo {
 	for (int i = 0; i < anArray.length; i++) {
 	    System.out.print(anArray[i] + " ");
 	}
-	System.out.println();;
+	System.out.println();;;
     }
 }
