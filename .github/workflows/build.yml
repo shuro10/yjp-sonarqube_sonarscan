@@ -18,5 +18,5 @@ jobs:
 #         -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
 #         -Dsonar.branch.name=${GITHUB_REF:11}
 #         -Dsonar.scm.provider=git
-        -Dsonar.java.binaries=${{PWD}}
+        -Dsonar.java.binaries=${PWD}
         
