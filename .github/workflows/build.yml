@@ -43,14 +43,4 @@ jobs:
 #         env:
 #           # to get access to secrets.SONAR_TOKEN, provide GITHUB_TOKEN
 #           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: sonar-scanner
-          -Dsonar.host.url=${{ secrets.SONARQUBE_HOST_ON_GCP }}
-          -Dsonar.login=${{ secrets.SONARQUBE_TOKEN_ON_GCP }}
-#           -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
-#           -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
-#           -Dsonar.pullrequest.key=${{ github.event.number }}
-#           -Dsonar.pullrequest.branch=${{ github.HEAD_REF }}
-#           -Dsonar.pullrequest.base=${{ github.BASE_REF }}
-#           -Dsonar.pullrequest.github.repository=${{ github.repository }}
-#           -Dsonar.scm.provider=git
-          -Dsonar.java.binaries=/server
+        run: sonar-scanner -Dsonar.host.url=${{ secrets.SONARQUBE_HOST_ON_GCP }} -Dsonar.login=${{ secrets.SONARQUBE_TOKEN_ON_GCP }} -Dsonar.java.binaries=/server
