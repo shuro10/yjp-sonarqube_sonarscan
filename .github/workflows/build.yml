@@ -11,12 +11,4 @@ jobs:
       with:
         host: ${{ secrets.SONARQUBE_HOST_ON_GCP }}
         login: ${{ secrets.SONARQUBE_TOKEN_ON_GCP }}
-      run: sonar-scanner
-#         -Dsonar.host.url=${{ secrets.SONAR_URL }}
-#         -Dsonar.login=${{ secrets.SONAR_TOKEN }}
-#         -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
-#         -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
-#         -Dsonar.branch.name=${GITHUB_REF:11}
-#         -Dsonar.scm.provider=git
-        -Dsonar.java.binaries=/tmp
         
