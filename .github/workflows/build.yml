@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: Setup sonarqube
        # run: warchant/setup-sonar-scanner@v1
-        run: kitabisa/sonarqube-action@master
+        run: > kitabisa/sonarqube-action@master
           -Dsonar.host.url=${{ secrets.SONARQUBE_HOST_ON_GCP }} 
           -Dsonar.login=${{ secrets.SONARQUBE_TOKEN_ON_GCP }} 
           -Dsonar.java.binaries=/server
