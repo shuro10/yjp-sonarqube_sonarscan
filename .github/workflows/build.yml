@@ -8,16 +8,19 @@ jobs:
     - uses: actions/checkout@master
     - name: SonarQube Scan
       uses: kitabisa/sonarqube-action@master
-      with:
-        host: ${{ secrets.SONARQUBE_HOST_ON_GCP }}
-        login: ${{ secrets.SONARQUBE_TOKEN_ON_GCP }}
+#       with:
+#         host: ${{ secrets.SONARQUBE_HOST_ON_GCP }}
+#         login: ${{ secrets.SONARQUBE_TOKEN_ON_GCP }}
       run: sonar-scanner
 #         -Dsonar.host.url=${{ secrets.SONAR_URL }}
+         -Dsonar.host.url=${{ secrets.SONARQUBE_HOST_ON_GCP }}
 #         -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+         -Dsonar.login=${{ secrets.SONARQUBE_TOKEN_ON_GCP }}
 #         -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
 #         -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
+         -Dsonar.projectKey=test1_java
 #         -Dsonar.branch.name=${GITHUB_REF:11}
 #         -Dsonar.scm.provider=git
-        -Dsonar.java.binaries=/usr/src
+         -Dsonar.java.binaries=/tmp
         
         
