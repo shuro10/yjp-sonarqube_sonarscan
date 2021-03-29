@@ -1,0 +1,4 @@
+
+     <properties>
+        <sonar.java.binaries >server</sonar.java.binaries>
+      </properties>
