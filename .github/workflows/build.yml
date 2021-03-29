@@ -17,4 +17,4 @@ jobs:
         projectName: "test2_notMaven"
 #        env: -Dsonar.java.binaries="."
 #        args: . ./env ; docker build -t $IMAGE .
-      env: "-Dsonar.java.binaries=."
+#      env: "-Dsonar.java.binaries=."
