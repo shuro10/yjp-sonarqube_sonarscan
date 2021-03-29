@@ -15,7 +15,7 @@ jobs:
         projectBaseDir: "."
         projectKey: "test1_java"
         projectName: "test1_java"
-#         args: -Dsonar.java.binaries="."
+      　: sonar.java.binaries="."
 #        args: . ./env ; docker build -t $IMAGE .
 #         java.binaries: ./server
 
