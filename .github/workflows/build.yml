@@ -15,6 +15,7 @@ jobs:
         projectBaseDir: "./server"
         projectKey: "test1_java"
         projectName: "test1_java"
+        java.binaries: ./server
 
 #          projectVersion: "v0.0.1"
 #        run: sonar-scanner
