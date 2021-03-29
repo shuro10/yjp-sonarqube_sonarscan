@@ -15,6 +15,7 @@ jobs:
         projectBaseDir: "./server"
         projectKey: "test1_java"
         projectName: "test1_java"
+
 #          projectVersion: "v0.0.1"
 #        run: sonar-scanner
 #           -Dsonar.host.url=${{ secrets.SONARQUBE_HOST_ON_GCP }}
