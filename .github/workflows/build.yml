@@ -12,10 +12,10 @@ jobs:
       with:
         host: ${{ secrets.SONARQUBE_HOST_ON_GCP }}
         login: ${{ secrets.SONARQUBE_TOKEN_ON_GCP }}
-        projectBaseDir: "./server"
+        projectBaseDir: "."
         projectKey: "test1_java"
         projectName: "test1_java"
-        args: -Dsonar.java.binaries="."
+#         args: -Dsonar.java.binaries="."
 #        args: . ./env ; docker build -t $IMAGE .
 #         java.binaries: ./server
 
