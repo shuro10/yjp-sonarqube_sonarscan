@@ -1,3 +1,4 @@
+
 on: push
 name: Main Workflow
 jobs:
@@ -9,5 +10,12 @@ jobs:
     - name: SonarQube Scan
       uses: kitabisa/sonarqube-action@master
       with:
-        host: ${{ secrets.SONARQUBE_HOST }}
-        login: ${{ secrets.SONARQUBE_TOKEN }}
+        host: ${{ secrets.SONARQUBE_HOST_ON_GCP }}
+        login: ${{ secrets.SONARQUBE_TOKEN_ON_GCP }}
+        projectBaseDir: "."
+        projectKey: "test2_notMaven"
+        projectName: "test2_notMaven"
+#        env: -Dsonar.java.binaries="."
+#        args: . ./env ; docker build -t $IMAGE .
+#      env: "-Dsonar.java.binaries=."
+#
