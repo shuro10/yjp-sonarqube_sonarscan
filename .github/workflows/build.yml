@@ -18,3 +18,4 @@ jobs:
 #        env: -Dsonar.java.binaries="."
 #        args: . ./env ; docker build -t $IMAGE .
 #      env: "-Dsonar.java.binaries=."
+#
